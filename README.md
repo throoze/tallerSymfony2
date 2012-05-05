@@ -129,7 +129,7 @@ proyecto en el directorio de la ruta proveida al comando `cd`.
 
 Se incluye un script llamado [`packages.sh`](https://github.com/throoze/tallerSymfony2/blob/master/packages.sh)
 el cual se encarga de instalar los paquetes necesarios. Si desea conocer la lista
-detallada, examine el mencionado archivo. Para ejecutarlo, otorguele permisos de
+detallada, examine el mencionado archivo. Para ejecutarlo, otórguele permisos de
 ejecución y córralo:
 
     $ cd tallerSymfony2
@@ -283,17 +283,54 @@ a su DBMS y a su configuración particular. Ejemplo:
 ### g) Empieza el desarrollo:
 
 Una vez completados los pasos anteriores con éxito, usted está listo para empezar
-a desarrollar, o colaborar con el desarrollo.
+a desarrollar, o colaborar con el desarrollo. A los participantes del taller, les
+recomiendo leer las [**Otras Consideraciones**](https://github.com/throoze/tallerSymfony2#4-otras-consideraciones)
+acerca del curso.
 
 [arriba](https://github.com/throoze/tallerSymfony2#proyecto-taller-de-symfony-2)
 
 3) Colaboraciones:
 ------------------
 
+Para todo aquel que quiera colaborar con este proyecto, les pido que lo hagan 
+después del **8 de Junio de 2012**, para dar tiempo a que ya el producto del taller se
+haya desarrollado. Una vez pasada esa fecha, todo aquel que quisiera contribuir
+con código, estilos, o cualquier otra cosa, es totalmente bienvenido a hacerlo.
+
 [arriba](https://github.com/throoze/tallerSymfony2#proyecto-taller-de-symfony-2)
 
 4) Otras Consideraciones:
 -------------------------
+
+1. Les recomiendo a los participantes del taller que mantengan dos copias de este
+   repositorio. Una para convertirlo en su proyecto personal, y otra para tener el
+   código desarrollado por mi durante las clases. Esto les permitirá tener código
+   de ejemplo actualizado para ser usado en su proyecto personal, evaluar el código
+   del curso y contribuir a su mejoramiento, entre otras cosas.
+2. Hacer las tareas es importante para el buen desarrollo del taller, y para su propio
+   aprendizaje. De todos modos, no son obligatorias. Yo también estudio y trabajo y se
+   que manejar el tiempo propio puede llegar a ser una tarea bastante complicada. Aún
+   asi, es necesario cierto nivel de compromiso con el taller para que el aprendizaje
+   sea efectivo.
+3. Yo soy super fan del software libre. La comunidad del software libre crece y mejora
+   gracias a que sus miembros comparten ideas y codigo, lo que nos permite no tener que
+   empezar de cero nunca, sino siempre tener una base, cada vez más robusta, sobre la
+   cual continuar el desarrollo. Aún así, con la finalidad de aprender, conviene que
+   cada quien escriba su propio código. Compartir ideas es super enriquecedor, pero
+   asegúrense de hacerlo despues de al menos haber intentado aproximarse al problema por
+   ustedes mismos. Yo no voy a andar vigilando si el código es el mismo, pero mi
+   recomendación, de nuevo, es que cada quien escriba su propio código.
+4. Yo, por supuesto, puedo decir una que otra burrada de vez en cuando jejeje así que por
+   favor, les ruego, que me paren y me corrijan en el momento, para evitar que el grupo se
+   vaya con ideas erróneas.
+5. **Gracias a todos por su interés y asistencia!** Esto para mí es un experimento, y 
+   quisiera fomentar el que se siga haciendo, cada vez con temas nuevos. Ya hay algunas
+   iniciativas afines, y sé que podremos trabajar juntos para ello. Sean ustedes mismos
+   multiplicadores de esta iniciativa! Si saben algo que creen que es interesante, novedoso,
+   o que les guste mucho, les invito a que lo hablen conmigo a ver como creamos los medios
+   para hacer un nuevo taller, o curso, o coloquio, o charla... Estamos trabajando para crear
+   una estructura que lo facilite. Cuando tenga más información y esté mas concreto, les
+   hablaré más al respecto.
 
 [arriba](https://github.com/throoze/tallerSymfony2#proyecto-taller-de-symfony-2)
 
