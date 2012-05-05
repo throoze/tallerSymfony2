@@ -10,6 +10,8 @@ así como los patrones de diseño, las técnicas de desarrollo y el funcionamien
 del framework, mediante el desarrollo de un proyecto pequeño, el cual irá evolucionando
 en la medida y la dirección que los participantes decidan.
 
+El proyecto será una tienda virtual bastante sencilla y bastante genérica.
+
 > Para lograr el objetivo, es escencial la participación activa en el taller, así como el
 > compromiso de los participantes de continuar y alimentar el proyecto entre cada sesión.
     
