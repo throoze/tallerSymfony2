@@ -50,7 +50,7 @@ ser accedidos desde aqui:
 
 - [1ra Sesión](https://github.com/throoze/tallerSymfony2/blob/master/Resources/doc/sesion1.md) (Viernes 04-05-2012)
 
-> Nota:
+> **Nota**:
 > 
 > Las instrucciones aqui detalladas son válidas para una instalación en un entorno
 > Debian/Ubuntu Linux. El proceso de instalación en Windows o Mac OsX es similar,
@@ -61,7 +61,7 @@ ser accedidos desde aqui:
 > Para este taller, recomiendo la plataforma Debian/Ubuntu Linux, dado que provee
 > muchas facilidades para el desarrollador.
     
-> Nota:
+> **Nota**:
 > 
 > Como es convención, en toda la documentación aqui proveída, se utilizará el símbolo
 > `$` para denotar el _prompt_ con privilegios de usuario **regular**, y el símbolo `#` para
@@ -73,6 +73,20 @@ ser accedidos desde aqui:
 > 
 > Dichos comandos deben ejecutarse en una terminal.
 
+> **Nota**:
+> 
+> Las instrucciones a continuación suponen que la carpeta del proyecto (`tallerSymfony2`)
+> está alojada en la ruta absoluta `/home/usuario/proyectos`. Sustituya esta ruta
+> según su caso en particular.
+    
+> **Nota**:
+> 
+> Sustituya `taller.local.com`, tanto en el nombre de archivos y carpetas, como
+> en el contenido de los archivos, por cualquier otro nombre que usted quiera
+> darle a su página. estes el nombre que se utilizará en el _browser_ para acceder
+> a la aplicación.
+
+[arriba](https://github.com/throoze/tallerSymfony2#proyecto-taller-de-symfony-2)
 
 2) Instalación del proyecto:
 --------------------------------------------------
@@ -104,10 +118,12 @@ encontrará información al respecto).
 Luego, corre el siguiente comando:
 
     $ cd /ruta/a/la/carpeta/padre/de/la/carpeta/de/tu/proyecto
-    $ git clone https://github.com/throoze/tallerSymfony2.git
+    $ git clone git@github.com:throoze/tallerSymfony2.git
 
 Esto creará un nuevo directorio (llamado tallerSymfony2) con el contenido del
 proyecto en el directorio de la ruta proveida al comando `cd`.
+
+[arriba](https://github.com/throoze/tallerSymfony2#proyecto-taller-de-symfony-2)
 
 ### b) Instale los paquetes necesarios para el correcto funcionamiento:
 
@@ -124,6 +140,8 @@ Luego, corra el script `packages.sh` con el comando:
 
     $ ./packages.sh
 
+[arriba](https://github.com/throoze/tallerSymfony2#proyecto-taller-de-symfony-2)
+
 ### c) Corra el script `setup.sh`:
 
 y ejecute el script de configuración inicial:
@@ -134,6 +152,8 @@ Note que este script instala las librerías de la distribución standar de Symfo
 2, por lo cual deberá asegurarse de que los repositorios se clonan exitosamente.
 Esté atento a cualquier salida de error, y si la instalación de éstas librerías
 (vendors) falla, vuelva a correr el script hasta que no fallen.
+
+[arriba](https://github.com/throoze/tallerSymfony2#proyecto-taller-de-symfony-2)
 
 ### Configure el repositorio local con un nuevo repositorio remoto (opcional):
 
@@ -148,10 +168,12 @@ de este, ejecute los pasos a continuación. En caso contrario, salte asta el lit
     $ git commit -m "Inicializado el repositorio"
     $ git remote add <dirección del repositorio remoto independiente>
     
-> Nota:
+> **Nota**:
 > 
 > Crear un repositorio remoto es bastante sencillo en github. Lea su
 > [material de ayuda](http://help.github.com/create-a-repo/).
+
+[arriba](https://github.com/throoze/tallerSymfony2#proyecto-taller-de-symfony-2)
 
 ### d) Configure el servidor web (apache2) para servir su proyecto en un virtualhost:
 
@@ -215,6 +237,8 @@ Debe obtener una salida parecida a esta:
 En un _browser_, coloque la dirección `http://taller.local.com/`. Deberá obtener una
 página con los estilos de Symfony 2.
 
+[arriba](https://github.com/throoze/tallerSymfony2#proyecto-taller-de-symfony-2)
+
 ### e) Checkee su configuración de php y symfony:
 
 Para ello, corra el archivo de checkeo tanto en la terminal:
@@ -229,6 +253,8 @@ Corrija aquellos errores y warnings arrojados por el script `check.php`, tomando
 en cuenta que se utilizan archivos `php.ini` diferentes para la corrida de la
 terminal y del browser. El script le informará de cual archivo `php.ini` se está
 usando.
+
+[arriba](https://github.com/throoze/tallerSymfony2#proyecto-taller-de-symfony-2)
 
 ### f) Actualize su archivo `parameters.ini`:
 
@@ -252,31 +278,28 @@ a su DBMS y a su configuración particular. Ejemplo:
         locale            = en
         secret            = ThisTokenIsNotSoSecretChangeIt
 
+[arriba](https://github.com/throoze/tallerSymfony2#proyecto-taller-de-symfony-2)
+
 ### g) Empieza el desarrollo:
 
 Una vez completados los pasos anteriores con éxito, usted está listo para empezar
 a desarrollar, o colaborar con el desarrollo.
 
-> Nota:
-> 
-> Las instrucciones anteriores suponen que la carpeta del proyecto (`tallerSymfony2`)
-> está alojada en la ruta absoluta `/home/usuario/proyectos`. Sustituya esta ruta
-> según su caso en particular.
-    
-> Nota:
-> 
-> Sustituya `taller.local.com`, tanto en el nombre de archivos y carpetas, como
-> en el contenido de los archivos, por cualquier otro nombre que usted quiera
-> darle a su página. estes el nombre que se utilizará en el _browser_ para acceder
-> a la aplicación.
+[arriba](https://github.com/throoze/tallerSymfony2#proyecto-taller-de-symfony-2)
 
 3) Colaboraciones:
 ------------------
 
+[arriba](https://github.com/throoze/tallerSymfony2#proyecto-taller-de-symfony-2)
+
 4) Otras Consideraciones:
 -------------------------
+
+[arriba](https://github.com/throoze/tallerSymfony2#proyecto-taller-de-symfony-2)
 
 5) Licencia:
 ------------
 
 Lea la licencia en [LICENSE](https://github.com/throoze/tallerSymfony2/blob/master/LICENSE).
+
+[arriba](https://github.com/throoze/tallerSymfony2#proyecto-taller-de-symfony-2)
