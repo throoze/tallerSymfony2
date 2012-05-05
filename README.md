@@ -12,7 +12,7 @@ en la medida y la dirección que los participantes decidan.
 
 > Para lograr el objetivo, es escencial la participación activa en el taller, así como el
 > compromiso de los participantes de continuar y alimentar el proyecto entre cada sesión.
-
+    
 > Nota:
 > 
 > Este archivo ha sido escrito usando el lenguaje de markup **Markdown**. Para
@@ -51,16 +51,16 @@ ser accedidos desde aqui:
 > 
 > Para este taller, recomiendo la plataforma Debian/Ubuntu Linux, dado que provee
 > muchas facilidades para el desarrollador.
-
+    
 > Nota:
 > 
 > Como es convención, en toda la documentación aqui proveída, se utilizará el símbolo
 > `$` para denotar el _prompt_ con privilegios de usuario **regular**, y el símbolo `#` para
 > denotar el _prompt_ con privilegios de usuario **root**. Por ejemplo.:
-> ::
->    $ esto es un comando ejecutado por un usuario regular
->    
->    # esto es un comando ejecutado por el usuario root
+> 
+>    `$ esto es un comando ejecutado por un usuario regular`
+> 
+>    `# esto es un comando ejecutado por el usuario root`
 > 
 > Dichos comandos deben ejecutarse en una terminal.
 
@@ -84,7 +84,6 @@ Para instalar el nuevo proyecto del taller de Symfony 2, siga los siguientes pas
 Para poder clonarlo, usted debe tener instalada la herramienta de control de versiones
 [git](http://progit.org/). Si no lo tiene, instálelo usando el comando:
 
-::
     $ sudo aptitude install git
 
 Note que para poder clonar y colaborar en este repositorio usted debe tener los
@@ -94,7 +93,7 @@ y cargue su **Llave Pública de SSH** en github ([aqui](http://help.github.com/l
 encontrará información al respecto).
 
 Luego, corre el siguiente comando:
-::
+
     $ cd /ruta/a/la/carpeta/padre/de/la/carpeta/de/tu/proyecto
     $ git clone https://github.com/throoze/tallerSymfony2.git
 
@@ -108,14 +107,12 @@ el cual se encarga de instalar los paquetes necesarios. Si desea conocer la list
 detallada, examine el mencionado archivo. Para ejecutarlo, otorguele permisos de
 ejecución y córralo:
 
-::
     $ cd tallerSymfony2
     $ chmod +x packages.sh
     $ chmod +x setup.sh
 
 Luego, corra el script `packages.sh` con el comando:
 
-::
     $ ./packages.sh
 
 ### c) Corra el script `setup.sh`:
@@ -129,14 +126,13 @@ Note que este script instala las librerías de la distribución standar de Symfo
 Esté atento a cualquier salida de error, y si la instalación de éstas librerías
 (vendors) falla, vuelva a correr el script hasta que no fallen.
 
-### (OPCIONAL) configure el repositorio local con un nuevo repositorio remoto:
+### Configure el repositorio local con un nuevo repositorio remoto (opcional):
 
 **Los participantes del taller deben ejecutar este paso obligatorioamente**. Si
 usted quiere tomar este repositorio como base para un proyecto suyo, independiente
 de este, ejecute los pasos a continuación. En caso contrario, salte asta el literal
 `d)`.
 
-::
     $ rm -r .git
     $ git init
     $ git add .
@@ -150,21 +146,21 @@ La manera óptima de mantener varios proyectos web en un mismo _host_ es mediant
 _virtualhosts_. A continuación explicaremos su configuración sin mucho detalle.
 [Profundizar en ella](http://www.google.com/) es tarea del lector.
 
-# Copie el archivo de ejemplo en la configuracion de virtualhosts de apache:
-::
+##### Copie el archivo de ejemplo en la configuracion de virtualhosts de apache:
+
     $ sudo cp Resources/doc/taller.local.com /etc/apache2/sites-available/
 
-# Cree el directorio root que servirá la aplicación:
-::
+##### Cree el directorio root que servirá la aplicación:
+
     $ sudo mkdir -p /srv/www/taller.local.com/logs
     $ sudo ln -s -T /home/usuario/proyectos/tallerSymfony2/web public_html
 
-# Edite el archivo _hosts_:
-::
+##### Edite el archivo _hosts_:
+
     $ sudo gedit /etc/hosts
 
 El archivo debe verse algo asi:
-::
+
     127.0.0.1       localhost
     127.0.0.1       hostname
     
@@ -176,7 +172,7 @@ El archivo debe verse algo asi:
     ff02::2 ip6-allrouters
 
 Edítelo, agregando lo siguiente:
-::
+
     127.0.0.1       localhost
     127.0.0.1       hostname
     **127.0.0.1       www.taller.local.com       taller.local.com**
@@ -187,12 +183,13 @@ Edítelo, agregando lo siguiente:
     ff00::0 ip6-mcastprefix
     ff02::1 ip6-allnodes
     ff02::2 ip6-allrouters
-# Reinicie el servidor apache 2:
-::
+
+##### Reinicie el servidor apache 2:
+
     $ sudo /etc/init.d/apache2 restart
     
 Debe obtener una salida parecida a esta:
-::
+
      * Restarting web server apache2
      apache2: Could not reliably determine the server's fully qualified domain name,
      using 127.0.0.1 for ServerName... waiting .
@@ -200,7 +197,8 @@ Debe obtener una salida parecida a esta:
      using 127.0.0.1 for ServerName
      [ OK ]
 
-# Pruebe la configuración:
+##### Pruebe la configuración:
+
 En un _browser_, coloque la dirección `http://taller.local.com/`. Deberá obtener una
 página con los estilos de Symfony 2.
 
@@ -251,10 +249,21 @@ a desarrollar, o colaborar con el desarrollo.
 > Las instrucciones anteriores suponen que la carpeta del proyecto (`tallerSymfony2`)
 > está alojada en la ruta absoluta `/home/usuario/proyectos`. Sustituya esta ruta
 > según su caso en particular.
-
+    
 > Nota:
 > 
 > Sustituya `taller.local.com`, tanto en el nombre de archivos y carpetas, como
 > en el contenido de los archivos, por cualquier otro nombre que usted quiera
 > darle a su página. estes el nombre que se utilizará en el _browser_ para acceder
 > a la aplicación.
+
+3) Colaboraciones:
+------------------
+
+4) Otras Consideraciones:
+-------------------------
+
+5) Licencia:
+------------
+
+Lea la licencia en [LICENSE](https://github.com/throoze/tallerSymfony2/blob/master/LICENSE).
