@@ -22,11 +22,18 @@ en la medida y la dirección que los participantes decidan.
 Tabla de Contenidos:
 -----------------------
 
-- 1) Documentación
-- 2) Instalación
-- 3) Colaboraciones
-- 4) Otras Consideraciones
-- 5) Licencia
+- 1) [Documentación](https://github.com/throoze/tallerSymfony2#1-documentaci%C3%B3n)
+- 2) [Instalación del proyecto](https://github.com/throoze/tallerSymfony2#2-instalaci%C3%B3n-del-proyecto)
+-- 2.a) [Clone este repositorio](https://github.com/throoze/tallerSymfony2#a-clone-este-repositorio)
+-- 2.b) [Instale los paquetes necesarios para el correcto funcionamiento](https://github.com/throoze/tallerSymfony2#b-instale-los-paquetes-necesarios-para-el-correcto-funcionamiento)
+-- 2.c) [Corra el script setup.sh](https://github.com/throoze/tallerSymfony2#c-corra-el-script-setupsh)
+-- 2.d) [Configure el servidor web (apache2) para servir su proyecto en un virtualhost](https://github.com/throoze/tallerSymfony2#d-configure-el-servidor-web-apache2-para-servir-su-proyecto-en-un-virtualhost)
+-- 2.e) [Checkee su configuración de php y symfony](https://github.com/throoze/tallerSymfony2#e-checkee-su-configuraci%C3%B3n-de-php-y-symfony)
+-- 2.f) [Actualize su archivo parameters.ini](https://github.com/throoze/tallerSymfony2#f-actualize-su-archivo-parametersini)
+-- 2.g) [Empieza el desarrollo](https://github.com/throoze/tallerSymfony2#g-empieza-el-desarrollo)
+- 3) [Colaboraciones](https://github.com/throoze/tallerSymfony2#3-colaboraciones)
+- 4) [Otras Consideraciones](https://github.com/throoze/tallerSymfony2#4-otras-consideraciones)
+- 5) [Licencia](https://github.com/throoze/tallerSymfony2#5-licencia)
 
 1) Documentación:
 -----------------
@@ -139,7 +146,11 @@ de este, ejecute los pasos a continuación. En caso contrario, salte asta el lit
     $ git commit -m "Inicializado el repositorio"
     $ git remote add <dirección del repositorio remoto independiente>
     
-    
+> Nota:
+> 
+> Crear un repositorio remoto es bastante sencillo en github. Lea su
+> [material de ayuda](http://help.github.com/create-a-repo/).
+
 ### d) Configure el servidor web (apache2) para servir su proyecto en un virtualhost:
 
 La manera óptima de mantener varios proyectos web en un mismo _host_ es mediante
@@ -175,7 +186,7 @@ Edítelo, agregando lo siguiente:
 
     127.0.0.1       localhost
     127.0.0.1       hostname
-    **127.0.0.1       www.taller.local.com       taller.local.com**
+    127.0.0.1       www.taller.local.com       taller.local.com
     
     # The following lines are desirable for IPv6 capable hosts
     ::1     ip6-localhost ip6-loopback
