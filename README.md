@@ -19,6 +19,8 @@ en la medida y la dirección que los participantes decidan.
 > visualizarlo correctamente, hágalo en algún visor que soporte este lenguaje,
 > como por ejemplo el de [github](https://github.com/throoze/tallerSymfony2).
 
+********************************************************************************
+
 Tabla de Contenidos:
 -----------------------
 
