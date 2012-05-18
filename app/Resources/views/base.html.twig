@@ -3,11 +3,58 @@
     <head>
         <meta charset="UTF-8" />
         <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+
+        {# Incluyo los estilos base #}
+        {% stylesheets '../app/Resources/css/*' filter='cssrewrite' %}
+        <link rel="stylesheet" type="text/css" media="screen" href="{{ asset_url }}" />
+        {% endstylesheets %}
+
+        {# Bloque de estilos a incluir, particulares de cada vista #}
+        {% block stylesheets %}
+        {% endblock %}
+
+        {% block javascript_libraries %}
+            {% javascripts '../app/Resources/js/*' %}
+        <script type="text/javascript" src="{{ asset_url }}"></script>
+            {% endjavascripts %}
+        {% endblock javascript_libraries %}
+
         <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        <div id="header">
+            <div id="header_wrapper" class="wrapper">
+                {% block header %}
+                    <div id="title"> Tienda virtual</div>
+                    {% block mid_header %}
+                    {% endblock %}
+                {% endblock %}
+            </div>
+        </div>
+        <div id="body">
+            <div id="body_wrapper" class="wrapper">
+            {% block body %}
+            {% endblock %}
+            </div>
+        </div>
+        <div id="footer">
+            <div id="footer_wrapper" class="wrapper">
+                {% block footer %}
+                    <p id="disclaimer">
+                        TiendaUSB ©2012 - Todos los derechos reservados. |
+                        <a href="#">Privacidad</a> |
+                        <a href="#">Condiciones de uso</a> |
+                        <a href="#">Ayuda</a> |
+                        <a href="#">Contactanos</a>
+                    </p>
+                {% endblock %}
+            </div>
+        </div>
+        {#Javascripts que pueden ejecutarse despues de cargada la pagina #}
+        {% block javascripts %}
+            {% javascripts '../app/Resources/js/main.js' %}
+                <script type="text/javascript" src="{{ asset_url }}"></script>
+            {% endjavascripts %}
+        {% endblock %}
     </body>
 </html>

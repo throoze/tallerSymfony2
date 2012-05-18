@@ -1,0 +1,10 @@
+{% extends '::base.html.twig'%}
+{% block body %}
+    {% if app.user %}
+        <h1>Bienvenido {{ app.user.username }}!</h1>
+        <p>Esta página está en construcción... Pronto tendremos productos disponibles!</p>
+    {% else %}
+        <h1>Bienvenido!</h1>
+        <p>Usted no está autenticado. Por favor Inicie su sesión o <a href="{{ path('register') }}">Regístrese</a>.</p>
+    {% endif %}
+{% endblock%}

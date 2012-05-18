@@ -1,0 +1,9 @@
+{% extends '::base.html.twig'%}
+{% block body %}
+<form id="register_form" action="{{ path('register') }}" method="post" {{ form_enctype(form) }}>
+    {{ form_widget(form) }}
+    <div class="bottom_stuff">
+        <input type="submit" value="Registrarse en YouGrups" class="button"/>
+    </div>
+</form>
+{% endblock%}
